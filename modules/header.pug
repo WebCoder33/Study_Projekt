@@ -1,15 +1,17 @@
-div.header
-	div.header__body
-		div.header__logo
-			img.header-logo__image(src="img/logo.png")
-		nav.header__menu
-			a(href="").header-menu__home Home
-			a(href="" name="about") About&nbspUs
-			a(href="" name="services") Services
-				img(src="img/header_serv_icon.png").services__image
-			a(href="" name="careers") Careers
-			a(href="" name="news") News
-			a(href="" name="documentation") Documentation
-		nav.header__buttons
-			a(href="" name="login").header__buttons__login LOGIN
-			a(href="" name="register").header__buttons__register REGISTER
+div.header.header_style
+
+	div.logo.logo_position
+		img.logo__image(src="img/logo.png")
+
+	nav.menu
+		a(href="").menu__item.menu__item_home-style Home
+		a(href="" name="about").menu__item About&nbspUs
+		a(href="" name="services").menu__item Services
+			img(src="img/header_serv_icon.png").menu__item.menu__item_services-position
+		a(href="" name="careers").menu__item Careers
+		a(href="" name="news").menu__item News
+		a(href="" name="documentation").menu__item Documentation
+
+	div.buttons.buttons_theme
+		a(href="" name="login").buttons__login.buttons__login_style LOGIN
+		a(href="" name="register").buttons__register.buttons__register_style REGISTER
