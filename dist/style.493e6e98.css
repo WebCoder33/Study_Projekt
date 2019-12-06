@@ -5,7 +5,7 @@
 body {
   background-color: #E5E5E5; }
 
-a {
+nav.header-menu a, div.header-buttons a {
   text-decoration: none; }
 
 a:active {
@@ -20,10 +20,10 @@ a:active {
   align-items: center;
   justify-content: space-between; }
 
-.logo_position {
+.header-logo {
   margin: 15px 0px 15px 90px; }
 
-.menu {
+.header-menu {
   min-width: 450px;
   width: 527px;
   display: flex;
@@ -34,13 +34,13 @@ a:active {
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5); }
 
-.menu__item_home-style {
+.header-menu__item_home {
   font-weight: bold; }
 
-.menu__item_services-position {
+.header-menu__item_services-icon {
   padding-left: 3px; }
 
-.buttons_theme {
+.header-buttons {
   min-width: 180px;
   width: 200px;
   margin: auto auto auto 25px;
@@ -52,13 +52,13 @@ a:active {
   display: flex;
   justify-content: space-between; }
 
-.buttons__login_style {
+.header-buttons__login {
   padding: 9px 20px 10px 20px;
   border: 2px solid #BC9CFF;
   border-radius: 22px;
   color: #BC9CFF; }
 
-.buttons__register_style {
+.header-buttons__register {
   padding: 9px 20px 10px 20px;
   border: 2px solid #BC9CFF;
   border-radius: 22px;
@@ -105,13 +105,6 @@ a:active {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
-
-.about-menu {
-  display: flex;
-  flex-flow: row nowrap; }
-
-.menu__* {
-  list-style: none; }
 
 
 
