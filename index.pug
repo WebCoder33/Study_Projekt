@@ -8,11 +8,14 @@ html(lang="ru-RU")
 	body
 		header
 			include modules/header
-		br
 
-		include modules/about
+			div.content
+				img(src="img/LandingPage.png", alt="Background Image").content__background
+				p.content__text. 
+					Лучшие номера для вашей работы, 
+					отдыха и просто вдохновения.
 
-		br
+			include modules/about
 
 		footer
 			include modules/footer

@@ -1,10 +1,7 @@
 @charset "UTF-8";
 * {
-  padding: 0;
-  margin: 0; }
-
-body {
-  background-color: #E5E5E5; }
+  padding: 0px;
+  margin: 0px; }
 
 nav.header-menu a, div.header-buttons a {
   text-decoration: none;
@@ -170,7 +167,8 @@ input.sub__input-submit {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 17px;
-  color: rgba(31, 32, 65, 0.75); }
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 2px; }
 
 .nav-socials_style {
   width: 112px;
@@ -178,6 +176,30 @@ input.sub__input-submit {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+
+.content {
+  display: fex;
+  position: relative;
+  margin: 0px;
+  padding: 0px; }
+
+.content__background {
+  width: 100%; }
+
+.content__text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 297px;
+  height: 48px;
+  position: absolute;
+  top: 85%;
+  right: 5%;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75); }
 
 
 
