@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="login.css")
+        link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+        title Document
+    body
+
+        form(action="").login-form
+
+            dev.login-form_wrap
+
+                h1.login-form__header Войти
+
+                div.login-form_data 
+                    input(type="email" placeholder="Email").login-form__email
+                    input(type="password" placeholder="Пароль").login-form__password
+
+                div.login-form_login
+                    input(type="button" value="Войти").login-form_login__button
+                    img(src="img/forward.png", alt="").login_form__button-img
+
+                div.reg-wrap_create
+                        span.reg-wrap_submit__text Нет аккаунта на Toxin?
+                        input(type="submit", value="Войти").reg-wrap__login-create
+
+                
