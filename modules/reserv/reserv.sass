@@ -1,0 +1,259 @@
+//Общие настройки формы-------------------------------------------
+#reserve-header__rubsimv
+	font-family: 'PT Sans', serif
+
+.reserv
+	width: 380px
+	height: 511px
+	background: #FFFFFF
+	border: 1px solid rgba(0, 0, 0, 0.12)
+	box-sizing: border-box
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2)
+	border-radius: 4px
+
+.reserv-wrap
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+	align-items: flex-start
+	margin: 40px 30px
+	height: 441px
+	width: 320px
+
+//----------------------------------------------------
+
+
+//заголовок-------------------------------------------
+.reserve-header
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: center
+	height: 30px
+	width: 320px
+
+.header__numroom
+	font-family: 'Quicksand', sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 14px
+	line-height: 17px
+	/* Dark 100% */
+	color: #1F2041
+
+div.reserve-header span.header__numroom_number
+	font-family: 'Quicksand', sans-serif
+	font-weight: bold
+	font-size: 24px
+	//line-height: 30px
+	color: #1F2041
+
+div.reserve-header span.header__numroom_class
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	/* identical to box height */
+	text-transform: uppercase
+	/* Primary Color */
+	color: #BC9CFF
+
+.header__numroom_second
+	font-family: Montserrat
+	font-style: normal
+	font-weight: bold
+	font-size: 14px
+	line-height: 18px
+	/* or 129% */
+	color: rgba(31, 32, 65, 0.5)
+
+//----------------------------------------------------
+
+
+
+//выбор дат проживания-------------------------------------------
+.reserve-dates
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	text-transform: uppercase
+	color: #1F2041
+	margin-top: 8px
+
+.reserve-arrival,.reserve-checkout
+	display: flex
+	flex-flow: column wrap
+	align-content: flex-start
+	font-family: 'Montserrat', sans-serif
+	margin-right: 20px
+
+.reserve-arrival__header,.reserve-checkout__header,.reserve-guests__header
+	font-family: 'Montserrat', sans-serif
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	text-transform: uppercase
+	color: #1F2041
+	margin-bottom: 5px
+	
+.reserve-arrival__input,.reserve-checkout__input
+	border: none 
+	outline: none 
+	-webkit-appearance: none 
+	background: #FFFFFF
+	border: 1px solid rgba(31, 32, 65, 0.25)
+	box-sizing: border-box
+	border-radius: 4px
+	color: rgba(31, 32, 65, 0.75)
+	width: 150px
+	height: 44px
+	padding-left: 8px
+	font-size: 14px
+	background: url(img/expand.png) no-repeat 90% 60%
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: rgba(31, 32, 65, 0.75)
+
+//----------------------------------------------------
+
+
+
+//Количество гостей-------------------------------------------
+.reserve-guests
+	margin-top: 10px
+
+.reserve-guests__input
+	width: 306px
+	height: 38px
+	border: none 
+	outline: none 
+	-webkit-appearance: none 
+	background: #FFFFFF
+	border: 1px solid rgba(31, 32, 65, 0.25)
+	box-sizing: border-box
+	border-radius: 4px
+	color: rgba(31, 32, 65, 0.75)
+	text-align: left
+	background: url(img/expand.png) no-repeat 96% 50%
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: rgba(31, 32, 65, 0.75)
+	cursor: pointer
+
+//----------------------------------------------------
+
+
+
+//Таблица расчетов стоимости----------------------------------------------------
+.reserve-price 
+	width: 100%
+	height: 110px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-flow: column nowrap
+	margin-top: 22px
+
+.price-table__row
+	width: 100%
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: flex-start
+	font-family: 'Montserrat', sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 14px
+	line-height: 24px
+	color: rgba(31, 32, 65, 0.75)
+	position: relative
+
+
+div.price-table__cell //Костыль для переноса слова на вторую строку
+	width: 200px
+	height: 40px
+	display: flex
+	flex-flow: row wrap
+	line-height: 20px
+
+span.price-table__attention
+	position: absolute
+	right: 23%
+	width: 23px
+	height: 20px
+	text-align: center
+	color: rgba(31, 32, 65, 0.25)
+	padding-bottom: 2px
+	border: 1px solid rgba(31, 32, 65, 0.25)
+	border-radius: 100%
+	margin-left: 5px
+
+//----------------------------------------------------
+
+
+
+//Итоговая цена-------------------------------------------
+.reserve-total_price
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	width: 100%
+	font-family: 'Quicksand', sans-serif
+	font-style: normal
+	font-weight: bold
+	font-size: 19px
+	line-height: 24px
+	color: #1F2041
+	margin-top: 25px
+
+.total_price__border
+	width: 60%
+	border-bottom: 1px dashed rgba(31, 32, 65, 0.25)
+
+//----------------------------------------------------
+
+
+
+//Кнопка бронированния-------------------------------------------
+.reserve-button_wrap
+	display: flex
+	flex-flow: row nowrap
+	position: relative
+	margin-top: 21px
+
+.reserve-pay__button
+	border: none 
+	outline: none 
+	-webkit-appearance: none 
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
+	border-radius: 22px
+	width: 320px
+	height: 44px
+	font-family: Montserrat
+	font-style: normal
+	font-weight: bold
+	font-size: 12px
+	line-height: 15px
+	text-align: center
+	text-transform: uppercase
+	color: #FFFFFF
+	cursor: pointer
+
+.reserve-pay__img
+	position: absolute
+	top: 30%
+	right: 5%
+
+//----------------------------------------------------

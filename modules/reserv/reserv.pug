@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="widp=device-widp, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="reserv.css")
+		link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+		link(href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet")
+		title Document
+	body
+
+		//Переменные окружения. Цены Номера и тд. Для быстрого изменения----------------------------
+		- var room_number = 888, room_class = "люкс", room_price = 9990; price = 39960;
+		- var col_days = 4, total_price = '38 081', discount = 2179, service_price = 0; price_dop = 301;
+
+
+		//веб офрма---------------------------------------------
+		form(action="").reserv
+			//обертка контента
+			div.reserv-wrap
+
+
+				//Заголовок---------------------------------------------
+				div.reserve-header
+					p.header__numroom №&nbsp
+						span.header__numroom_number #{room_number}&nbsp
+						span.header__numroom_class #{room_class}
+					p.header__numroom_second #{room_price} #[span#reserve-header__rubsimv &#8399]&nbsp
+						span.reserve-header__numroom_price в сутки
+
+
+				//выбор дат---------------------------------------------
+				div.reserve-dates
+					div.reserve-arrival
+						h3.reserve-arrival__header прибытие
+						input(type="date", name="").reserve-arrival__input
+					div.reserve-checkout
+						h3.reserve-checkout__header выезд
+						input(type="date", name="").reserve-checkout__input
+
+
+				//Количество гостей---------------------------------------------
+				div.reserve-guests
+					h3.reserve-guests__header гости
+					input(type="button", value="Сколько гостей").reserve-guests__input
+
+
+				//Таблица расчетов стоимости---------------------------------------------
+				div.reserve-price
+
+					div.price-table__row 
+						span.price-table__cell #{room_price} #[span#reserve-header__rubsimv &#8399] x #{col_days}
+						span.price-table__cell #{price} #[span#reserve-header__rubsimv &#8399]
+
+					div.price-table__row
+						span.price-table__cell Сбор за услуги: скидка #{discount} #[span#reserve-header__rubsimv &#8399] 
+						span.price-table__attention i						
+						span.price-table__cell #{service_price} #[span#reserve-header__rubsimv &#8399]
+
+					div.price-table__row
+						//костыль для переноса строки
+						div.price-table__cell 
+							span Сбор за дополнительные услуги 
+						span.price-table__attention i						
+						span.price-table__cell #{price_dop} #[span#reserve-header__rubsimv &#8399]
+						
+				//Итог Total Price
+				div.reserve-total_price
+					span.total_price__text Итого 
+					span.total_price__border
+					span.total_price__value #{total_price} 
+					span#reserve-header__rubsimv &#8399
+
+
+				//Кнопка оплаты---------------------------------------------
+				div.reserve-button_wrap
+						input(type="submit", value="забронировать").reserve-pay__button
+						img(src="img/forward.png", value="Забронировать").reserve-pay__img
+
+
+
+
+
