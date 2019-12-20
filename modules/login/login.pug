@@ -12,20 +12,25 @@ html(lang="en")
 
         form(action="").login-form
 
+            //Обертка контента-------------------------------------------------
             dev.login-form_wrap
 
+                //Заголовок-----------------------------------------------------
                 h1.login-form__header Войти
 
-                div.login-form_data 
-                    input(type="email" placeholder="Email").login-form__email
-                    input(type="password" placeholder="Пароль").login-form__password
+                //Поля ввода email & password-----------------------------------
+                div.login_input
+                    input(type="email" placeholder="Email").login__email
+                    input(type="password" placeholder="Пароль").login__password
 
-                div.login-form_login
-                    input(type="button" value="Войти").login-form_login__button
-                    img(src="img/forward.png", alt="").login_form__button-img
+                //Вход в профиль.-----------------------------------------------
+                div.login-form_enter
+                    input(type="button" value="Войти").login__button
+                    img(src="img/forward.png", alt="").login__button-img
 
-                div.reg-wrap_create
-                        span.reg-wrap_submit__text Нет аккаунта на Toxin?
-                        input(type="submit", value="Войти").reg-wrap__login-create
+                //Создание профиля.---------------------------------------------
+                div.login-form_create
+                        span.create__text Нет аккаунта на Toxin?
+                        input(type="button", value="Создать").login__create
 
                 

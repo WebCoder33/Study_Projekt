@@ -10,39 +10,49 @@ html(lang="en")
         title Document
     body
 
+        //Форма-------------------------------------------------------------------------------------
         form.register 
 
+                //Обертка для контента--------------------------------------------------------------
                 div.reg-content
 
+                    //Заголовок---------------------------------------------------------------------
                     h1.reg-header Регистрация аккаунта
 
+                    //Поля ввода Имени и Фамилии-----------------------------------------------------
                     div.reg-wrap_name
                         input(type="text", placeholder="Имя").reg__name
                         input(type="text" placeholder="Фамилия").reg__surname
 
+                    //Селектор выбора пола-----------------------------------------------------------
                     div.reg-wrap_gender
                         input(id="man", type="radio", name="gender", value="man").reg__man 
                         label(for="man") Мужчина
                         input(id="wooman", type="radio", name="gender", value="wooman").reg__wooman
                         label(for="wooman") Женщина
 
+                    //Выбор даты рождения------------------------------------------------------------
                     div.reg-wrap_birthdate
                         h3.reg-header__birthdate дата рождения
                         input(type="date", name="date").reg__birthdate
 
+                    //Поля ввода данных почты и пароля-----------------------------------------------
                     div.reg-wrap_email
                         h3.reg-header__regdata данные для входа в сервис
                         input(type="email", placeholder="Email").reg__email
                         input(type="password", placeholder="Пароль").reg__password
 
+                    //Селектор выбора подписки-------------------------------------------------------
                     div.reg-wrap_spec-offer
                         input(id="spec-offer" type="checkbox", name="").reg__spec-offer 
                         label(for="spec-offer").reg__label Получать спецпредложения
 
+                    //Оплата -------------------------------------------------------------------------
                     div.reg-wrap_pay
                         input(type="button", value="Перейти к оплате").reg-wrap__pay-button
                         img(src="img/forward.png", alt="").reg-wrap_pay__img
 
+                    //Вход в профиль-----------------------------------------------------------------
                     div.reg-wrap_login
                         span.reg-wrap_submit__text Уже есть аккаунт на Toxin
                         input(type="submit", value="Войти").reg-wrap__login-button

@@ -16,7 +16,7 @@ html(lang="en")
 		- var col_days = 4, total_price = '38 081', discount = 2179, service_price = 0; price_dop = 301;
 
 
-		//веб офрма---------------------------------------------
+		//Веб форма----------------------------------------------
 		form(action="").reserv
 			//обертка контента
 			div.reserv-wrap
@@ -66,7 +66,7 @@ html(lang="en")
 						span.price-table__attention i						
 						span.price-table__cell #{price_dop} #[span#reserve-header__rubsimv &#8399]
 						
-				//Итог Total Price
+				//Total Price------------------------------------------------------------------------------
 				div.reserve-total_price
 					span.total_price__text Итого 
 					span.total_price__border
@@ -74,7 +74,7 @@ html(lang="en")
 					span#reserve-header__rubsimv &#8399
 
 
-				//Кнопка оплаты---------------------------------------------
+				//Бронирование----------------------------------------------------------------
 				div.reserve-button_wrap
 						input(type="submit", value="забронировать").reserve-pay__button
 						img(src="img/forward.png", value="Забронировать").reserve-pay__img

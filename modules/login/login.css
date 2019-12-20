@@ -29,11 +29,11 @@
   height: 30px;
   margin-top: 10px; }
 
-.login-form_data {
+.login_input {
   display: flex;
   flex-flow: column nowrap; }
 
-.login-form__email, .login-form__password {
+.login__email, .login__password {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -49,12 +49,12 @@
   color: rgba(31, 32, 65, 0.25);
   padding-left: 15px; }
 
-.login-form_login {
+.login-form_enter {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row noform;
   position: relative; }
 
-.login-form_login__button {
+.login__button {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -73,23 +73,23 @@
   color: #FFFFFF;
   cursor: pointer; }
 
-.login_form__button-img {
+.login__button-img {
   position: absolute;
   top: 47%;
   right: 3%; }
 
-.reg-wrap_create {
+.login-form_create {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-.reg-wrap_submit__text {
+.create__text {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 18px; }
 
-.reg-wrap__login-create {
+.login__create {
   background-color: #FFFFFF;
   border: none;
   outline: none;

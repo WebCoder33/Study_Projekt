@@ -1,4 +1,4 @@
-//Настройки основы + главный заголовок
+//Форма. Обертка контента ---------------------------------------------------------
 .register
 	width: 380px
 	height: 646px
@@ -13,7 +13,11 @@
 .reg-content
 	margin: 40px 30px 40px 30px
 	padding: 0px
+//-----------------------------------------------------------------------------------
 
+
+
+//Заголовок--------------------------------------------------------------------------
 .reg-header
 	font-family: 'Quicksand', sans-serif
 	font-weight: bold
@@ -22,11 +26,16 @@
 	color: #1F2041
 	width: 320px
 	height: 30px
+//-----------------------------------------------------------------------------------
 
 
 
-//Все поля ввода и заголовки к ним
-.reg-header__birthdate, .reg-header__regdata //шрифты и отступы для заголовков
+//Поля ввода Имени и Фамилии. Выбор даты рождения. Поля ввода данных почты и пароля--
+.reg-wrap_name,.reg-wrap_birthdate, .reg-wrap_email 
+	display: flex
+	flex-flow: column nowrap
+	
+.reg-header__birthdate, .reg-header__regdata
 	font-family: 'Montserrat', sans-serif
 	font-style: normal
 	font-weight: bold
@@ -36,12 +45,8 @@
 	color: #1F2041
 	margin-bottom: 1px
 	margin-top: 20px
-
-.reg-wrap_name,.reg-wrap_birthdate, .reg-wrap_email //порядок элементов в обертках
-	display: flex
-	flex-flow: column nowrap
 	
-.reg__surname, .reg__name, .reg__birthdate,.reg__email,.reg__password //стиль для блоков ввода
+.reg__surname, .reg__name, .reg__birthdate,.reg__email,.reg__password 
 	border: none 
 	outline: none 
 	-webkit-appearance: none 
@@ -56,10 +61,12 @@
 	line-height: 18px
 	color: rgba(31, 32, 65, 0.25)
 	padding-left: 15px
+//----------------------------------------------------------------------------------
 
 
 
-//Радио переключатели выбора пола
+
+//Селектор выбора пола---------------------------------------------
 .reg-wrap_gender label 
 	font-family: 'Montserrat', sans-serif
 	font-size: 14px
@@ -88,10 +95,11 @@
 
 .reg-wrap_gender input[type=radio]:checked + label:before 
 	background: url(img/on.png) 0 0 no-repeat
+//----------------------------------------------------------------------
 
 
 
-//Переключатель специальных предложений
+//Селектор выбора подписки----------------------------------------------
 .reg-wrap_spec-offer
 	display: flex
 	align-content: flex-start
@@ -126,10 +134,11 @@
 
 .reg-wrap_spec-offer input[type=checkbox]:checked + label:before 
 	background: url(img/spec-offer-off.png) no-repeat 0%  0%
+//------------------------------------------------------------------------
 
 
 
-//Кнопка оплаты
+//Оплата------------------------------------------------------------------
 .reg-wrap_pay
 	display: flex
 	flex-flow: row nowrap
@@ -158,10 +167,11 @@
 	position: absolute
 	top: 50%
 	right: 3%
+//--------------------------------------------------------------------------
 
 
 
-//Кнопка login и текст
+//Вход в профиль. Текст. ---------------------------------------------------
 .reg-wrap_login
 	margin-top: 30px
 	display: flex
@@ -189,6 +199,7 @@
 	border-radius: 22px
 	color: #BC9CFF
 	cursor: pointer
+//--------------------------------------------------------------------------
 
 
 
