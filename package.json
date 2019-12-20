@@ -1,5 +1,20 @@
 {
-  "devDependencies": {
-    "cssnano": "^4.1.10"
-  }
+  "name": "Study_Projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCoder33/Study_Projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebCoder33/Study_Projekt/issues"
+  },
+  "homepage": "https://github.com/WebCoder33/Study_Projekt#readme"
 }

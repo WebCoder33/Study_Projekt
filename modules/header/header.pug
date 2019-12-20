@@ -1,0 +1,21 @@
+//header-------------------
+div.header.header_style
+
+	//Логотип--------------------------------------------------------------
+	div.header-logo
+		img.logo__image(src="/modules/header/img/logo.png")
+
+	//Горизонтальное меню ссылок-------------------------------------------------
+	nav.header-menu
+		a(href="").header-menu__item_home Home
+		a(href="" name="about").header-menu__item_about About&nbspUs
+		a(href="" name="services").header-menu__item_services Services
+			img(src="/modules/header/img/header_serv_icon.png").header-menu__item_services-icon
+		a(href="" name="careers").header-menu__item_careers Careers
+		a(href="" name="news").header-menu__item_news News
+		a(href="" name="documentation").header-menu__item_doc Documentation
+	
+	//Вход, регистрация ------------------------------------------------------------
+	div.header-buttons
+		a(href="" name="login").header-buttons__login LOGIN
+		a(href="" name="register").header-buttons__register REGISTER
