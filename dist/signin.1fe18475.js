@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"landing_page.sass":[function(require,module,exports) {
+},{"./bundle-url":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"signin.sass":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./modules/search/img/expand.png":[["expand.535eae24.png","modules/search/img/expand.png"],"modules/search/img/expand.png"],"/home/coder33/code/Study_Projekt/modules/about/img/forward.png":[["forward.5a7f180f.png","modules/about/img/forward.png"],"modules/about/img/forward.png"],"./img/LandingPage.png":[["LandingPage.1c390cdc.png","img/LandingPage.png"],"img/LandingPage.png"],"_css_loader":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/home/coder33/code/Study_Projekt/modules/about/img/forward.png":[["forward.5a7f180f.png","modules/about/img/forward.png"],"modules/about/img/forward.png"],"./img/registration.png":[["registration.046cfc42.png","img/registration.png"],"img/registration.png"],"_css_loader":"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44325" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44627" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/landing_page.52f70f69.js.map
+//# sourceMappingURL=/signin.1fe18475.js.map
