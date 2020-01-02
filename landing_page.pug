@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="landing_page.sass")
+        title LandingPage
+    body
+
+        header.lp_header
+            include modules/header/header
+        
+        div.lp_content 
+            include modules/search/search
+            p.lp_content-bgtext.
+                Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+        include modules/about/about
+
+        footer
+            include modules/footer/footer
+

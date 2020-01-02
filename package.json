@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/WebCoder33/Study_Projekt/issues"
   },
-  "homepage": "https://github.com/WebCoder33/Study_Projekt#readme"
+  "homepage": "https://github.com/WebCoder33/Study_Projekt#readme",
+  "devDependencies": {
+    "sass": "^1.24.0"
+  },
+  "dependencies": {
+    "pug": "^2.0.4"
+  }
 }

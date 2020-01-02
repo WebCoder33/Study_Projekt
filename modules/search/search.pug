@@ -1,39 +1,30 @@
-<!DOCTYPE html>
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		title Document
-		link(href="search.css" rel="stylesheet" type="text/css")
-		link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
-		link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
-	body
 
-		//Форма поиска----------------------------------------------------------
-		form(action="").form-search
+form(action="").form-search
 		
-			div.search-room
+	//Форма поиска---------------------------------------------------------	
+	div.search-room
 
-				//Заголовок--------------------------------------------------------
-				h3.search-header Найдём номера под ваши пожелания
+		//Заголовок--------------------------------------------------------
+		h3.search-header Найдём номера под ваши пожелания
 
-				//Выбор дат--------------------------------------------------------
-				div.search-dates
-					div.search-arrival
-						h3.search-arrival__header прибытие
-						input(type="date", name="").search-arrival__input
-					div.search-checkout
-						h3.search-checkout__header выезд
-						input(type="date", name="").search-checkout__input
+		//Выбор дат--------------------------------------------------------
+		div.search-dates
+			div.search-arrival
+				h3.search-arrival__header прибытие
+				input(type="date", name="").search-arrival__input
+			div.search-checkout
+				h3.search-checkout__header выезд
+				input(type="date", name="").search-checkout__input
 
-				//Количество гостей----------------------------------------------------
-				div.search-guests_amount
-					h3.guests_amount__header гости
-					input(type="button", value="Сколько гостей").guests_amount__input
+		//Количество гостей----------------------------------------------------
+		div.search-guests_amount
+			h3.guests_amount__header гости
+			input(type="button", value="Сколько гостей").guests_amount__input
 					
-				//Поиск----------------------------------------------------------------
-				div.submit-wrap
-					input(type="submit", value="подобрать номер").search-submit
-					img(src="img/forward.png", alt="").search-submit__img
+		//Поиск----------------------------------------------------------------
+		div.submit-wrap
+			input(type="submit", value="подобрать номер").search-submit
+			img(src="modules/search/img/forward.png", alt="").search-submit__img
 				
 
 			
