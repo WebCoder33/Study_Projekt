@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+        link(rel="stylesheet" type="text/css" href="reviews.css")
+        title reviews
+    body
+
+    //Блок отзывов=======================================
+    div.reviews
+
+        //Заголовок======================================
+        h3.reviews_header Отзывы посетителей номера
+
+        //Отзыв Мурада==================================================
+        div.review_murad
+
+            //Аватарка + данные =========================================
+            div.content__wrap
+                img(src="img/murad.png", alt="").content__img
+                p.content__text.
+                    #[strong Мурад Сарафанов] #[br]
+                    5 дней назад
+
+            //Лайки + Отзыв ======================================================================
+            div.content__wrap
+                input(type="button", value="12").like__button
+                img(src="img/heart.png", value="12").like-button__img
+                p.content__review-text.
+                    Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+
+        //Отзыв Патриции ============================================
+        div.review_patricia
+
+            //Лайки + Данные =========================================
+            div.content__wrap
+                img(src="img/patricia.png", alt="").content__img
+                p.content__text.
+                    #[strong Патрисия Стёклышкова] #[br]
+                    Неделю назад
+
+            //Лайки + Отзыв ========================================================================
+            div.content__wrap
+                input(type="button", value="2").like__button
+                img(src="img/heartoff.png", value="2").like-button__img
+                p.content__review-text.
+                    Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать,каждый день новое блюдо и десерт как комплимент

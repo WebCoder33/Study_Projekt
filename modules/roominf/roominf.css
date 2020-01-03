@@ -1,0 +1,42 @@
+div.roominfo {
+  width: 280px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  margin-left: 10px;
+}
+div.roominfo h3.roominf_header {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+  padding-top: 5px;
+}
+div.roominfo div.content__wrap {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-flow: row nowrap;
+  padding: 22px 0px 25px 5px;
+}
+div.roominfo div.content__wrap p.content__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 12px;
+}
+div.roominfo div.content__border {
+  width: 280px;
+  height: 1px;
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+}
+
+/*# sourceMappingURL=roominf.css.map */
