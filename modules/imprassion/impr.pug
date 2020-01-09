@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
-        link(rel="stylesheet" type="text/css" href="impr.css")
-        title impression
-    body
+//Блок впечатления=============================
+div.imprassions 
 
-        //Блок впечатления=============================
-        div.imprassions 
+	//Заголовок блока==========================
+	h3.impr_header Впечателения от номера
 
-            //Заголовок блока==========================
-            h3.impr_header Впечателения от номера
+	//Круговая диаграмма=======================
+	include ../diagram/diagram.pug
 
-            //Круговая диаграмма=======================
-            include ../diagram/diagram.pug
-
-            //Список значений==========================
-            ul.impr_value
-                li.item__great  Великолепно
-                li.item__good   Хорошо
-                li.item__alright    Удовлитворительно
-                li.item__bad    Разочарован
+	//Список значений==========================
+	ul.impr_value
+		li.item__great  Великолепно
+		li.item__good   Хорошо
+		li.item__alright    Удовлитворительно
+		li.item__bad    Разочарован

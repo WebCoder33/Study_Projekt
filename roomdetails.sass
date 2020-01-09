@@ -1,0 +1,49 @@
+@import 'modules/header/header'
+
+dev.roomdet_images
+	width: 100
+	height: 100%
+	display: flex
+	flex-flow: row nowrap
+	padding: 0
+	margin: 0
+
+	div.roomdet_images-column
+		display: flex
+		flex-flow: column nowrap
+
+		img 
+			width: 100%
+			height: 246px
+div.wrap2 
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+
+	div.content
+		width: 712px
+		height: 799px
+		display: flex
+		flex-flow: column nowrap
+		justify-content: space-between
+		align-content: space-between
+		margin: 50px 0px 0px 72px
+
+		div.wrap1
+			display: flex
+			flex-flow: row nowrap
+			justify-content: space-between
+			@import 'modules/roominf/roominf'
+			@import 'modules/imprassion/impr'
+			@import 'modules/diagram/diagram'
+		
+		@import 'modules/reviews/reviews'
+		@import 'modules/rules/rules'
+	div.wrap3 
+		margin-top: 60px
+		margin-right: 80px
+		@import 'modules/reserv/reserv'	
+
+
+@import 'modules/about/about'
+@import 'modules/footer/footer'
