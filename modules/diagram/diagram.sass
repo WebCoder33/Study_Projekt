@@ -1,29 +1,118 @@
-div.container
-    width: 300px
-    height: 300px
+//Блок диаграммы====================
+div.wrap
+  position: absolute
+  width: 300px
+  height: 300px
+ 
+  //Значения========================
+  div.container
+    width: 120px
+    height: 120px
     overflow: hidden
     border-radius: 50%
     position: relative
-    border: 1px dotted black
 
+    //Первый сектор===================
     div.sector
-        width: 50%
-        height: 50%
-        position: absolute
-        left: 50%
-        top: 0
-        transform-origin: right top
-        background: black
+      width: 50%
+      height: 50%
+      position: absolute
+      left: 50.5%
+      top: 0
+      transform-origin: right top
+      background: #BC9CFF
 
-.container:after 
-  content: ''
-  position: absolute
-  width: 80%
-  height: 80%
-  background: white
-  border-radius: 50%
-  top: 10%
-  left: 10%
+    //Второй сектор==================
+    div.test
+      width: 50%
+      height: 50%
+      position: absolute
+      left: 51%
+      top: 51%
+      transform-origin: right top
+      background: #6FCF97
+
+    //Третий сектор==================
+    div.test2
+      width: 50%
+      height: 100%
+      position: absolute
+      left: -0.5%
+      top: 0
+      transform-origin: left top
+      background: #FFE39C
+
+  //Белый фон========================
+  .container:after
+    content: ''
+    position: absolute
+    width: 94%
+    height: 94%
+    background: white
+    border-radius: 50%
+    top: 3%
+    left: 3%
+
+  //Широкая полоса===================
+  div.container2
+    width: 120px
+    height: 120px
+    overflow: hidden
+    border-radius: 50%
+    position: relative
+    top: -120px
+
+    //Выделенный сектор===============
+    div.sector2
+      width: 50%
+      height: 50%
+      position: absolute
+      left: 50.5%
+      top: 0
+      transform-origin: right top
+      background: #BC9CFF
+
+  //Белый фон для выделения===========
+  .container2:after
+    content: ''
+    position: absolute
+    width: 84%
+    height: 84%
+    background: white
+    border-radius: 50%
+    top: 8%
+    left: 8%
+
+  //Текст===================================    
+  div.text
+    position: absolute
+    left: 10%
+    top: 12%
+    display: flex
+    align-items: center
+    flex-flow: column nowrap
+
+    //Заголовок==============================
+    span.header
+      font-family: 'Quicksand', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      display: flex
+      align-items: center
+      text-align: center
+      color: #BC9CFF
+
+    //Текст под заголовком====================
+    span.text
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      color: #BC9CFF
 
 
 

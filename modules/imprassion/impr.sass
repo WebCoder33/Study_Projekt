@@ -1,0 +1,36 @@
+//Блок впечатления====================================
+div.imprassions 
+    width: 311px
+    height: 170px
+
+    //Заголовок блока=================================
+    h3.impr_header
+        font-family: 'Quicksand', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 19px
+        line-height: 24px
+        color: #1F2041
+    
+    //Круговая диаграмма==============================
+    @import "../diagram/diagram"
+
+    //Список значений=================================
+    ul.impr_value
+        margin-left: 127px
+        margin-top: 44px
+        font-family: 'Montserrat', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        color: rgba(31, 32, 65, 0.75)
+        
+        li.item__great
+            list-style-image: url(img/great.png)
+        li.item__good 
+            list-style-image: url(img/good.png)
+        li.item__alright
+            list-style-image: url(img/alright.png)
+        li.item__bad    
+            list-style-image: url(img/bad.png)

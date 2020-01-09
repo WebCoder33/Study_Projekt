@@ -1,16 +1,28 @@
-div.wrap {
+div.imprassions {
+  width: 311px;
+  height: 170px;
+}
+div.imprassions h3.impr_header {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
+div.imprassions div.wrap {
   position: absolute;
   width: 300px;
   height: 300px;
 }
-div.wrap div.container {
+div.imprassions div.wrap div.container {
   width: 120px;
   height: 120px;
   overflow: hidden;
   border-radius: 50%;
   position: relative;
 }
-div.wrap div.container div.sector {
+div.imprassions div.wrap div.container div.sector {
   width: 50%;
   height: 50%;
   position: absolute;
@@ -19,7 +31,7 @@ div.wrap div.container div.sector {
   transform-origin: right top;
   background: #BC9CFF;
 }
-div.wrap div.container div.test {
+div.imprassions div.wrap div.container div.test {
   width: 50%;
   height: 50%;
   position: absolute;
@@ -28,7 +40,7 @@ div.wrap div.container div.test {
   transform-origin: right top;
   background: #6FCF97;
 }
-div.wrap div.container div.test2 {
+div.imprassions div.wrap div.container div.test2 {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -37,7 +49,7 @@ div.wrap div.container div.test2 {
   transform-origin: left top;
   background: #FFE39C;
 }
-div.wrap .container:after {
+div.imprassions div.wrap .container:after {
   content: "";
   position: absolute;
   width: 94%;
@@ -47,7 +59,7 @@ div.wrap .container:after {
   top: 3%;
   left: 3%;
 }
-div.wrap div.container2 {
+div.imprassions div.wrap div.container2 {
   width: 120px;
   height: 120px;
   overflow: hidden;
@@ -55,7 +67,7 @@ div.wrap div.container2 {
   position: relative;
   top: -120px;
 }
-div.wrap div.container2 div.sector2 {
+div.imprassions div.wrap div.container2 div.sector2 {
   width: 50%;
   height: 50%;
   position: absolute;
@@ -64,7 +76,7 @@ div.wrap div.container2 div.sector2 {
   transform-origin: right top;
   background: #BC9CFF;
 }
-div.wrap .container2:after {
+div.imprassions div.wrap .container2:after {
   content: "";
   position: absolute;
   width: 84%;
@@ -74,7 +86,7 @@ div.wrap .container2:after {
   top: 8%;
   left: 8%;
 }
-div.wrap div.text {
+div.imprassions div.wrap div.text {
   position: absolute;
   left: 10%;
   top: 12%;
@@ -82,7 +94,7 @@ div.wrap div.text {
   align-items: center;
   flex-flow: column nowrap;
 }
-div.wrap div.text span.header {
+div.imprassions div.wrap div.text span.header {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -93,7 +105,7 @@ div.wrap div.text span.header {
   text-align: center;
   color: #BC9CFF;
 }
-div.wrap div.text span.text {
+div.imprassions div.wrap div.text span.text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -102,5 +114,27 @@ div.wrap div.text span.text {
   text-transform: uppercase;
   color: #BC9CFF;
 }
+div.imprassions ul.impr_value {
+  margin-left: 127px;
+  margin-top: 44px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+div.imprassions ul.impr_value li.item__great {
+  list-style-image: url(img/great.png);
+}
+div.imprassions ul.impr_value li.item__good {
+  list-style-image: url(img/good.png);
+}
+div.imprassions ul.impr_value li.item__alright {
+  list-style-image: url(img/alright.png);
+}
+div.imprassions ul.impr_value li.item__bad {
+  list-style-image: url(img/bad.png);
+}
 
-/*# sourceMappingURL=diagram.css.map */
+/*# sourceMappingURL=impr.css.map */
