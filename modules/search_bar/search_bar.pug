@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
+		link(rel="stylesheet" type="text/css" href="search_bar.css")
+		title SearchBar
+	body
+
+		//Форма фильтра====================================
+		form(action="").search_bar 
+
+			//Даты=========================================
+			div.dates
+				h3.dates__header даты пребывания в отеле
+				input(type="date" value="").dates__value
+
+			//Кол-во гостей================================
+			div.guests 
+				h3.guests__header гости
+				input(type="button" value="guests").guests__value
+
+			//Ценовой диапазон=============================
+			div.price_range 
+				span Здесь должен быть мой плагин
+
+			//Условия======================================
+			div.conditions
+				h3.conditions__header Checkbox Buttons
+				input(id="smoke", type="checkbox", name="conditions", value="smoke").conditions__smoke 
+				label(for="smoke") Можно курить
+				input(id="pets", type="checkbox", name="conditions", value="pets").conditions__pets
+				label(for="pets") Можно с питомцами
+				input(id="guests", type="checkbox", name="conditions", value="guests").conditions__guests
+				label(for="guests") Можно пригласить гостей #[br] (До 10 человек)
+
+			//Доступность======================================
+			div.reach 
+				h3.reach__header Доступность
+				input(id="large_hall", type="checkbox", name="reach", value="large_hall").reach__large_hall 
+				label(for="large_hall") #[span.header Широкий коридор] #[br] #[span.text Ширина коридоров в номере не менее 91 см.]
+				input(id="disabled_assistant", type="checkbox", name="reach", value="disabled_assistant").reach__disabled_assistant 
+				label(for="disabled_assistant") #[span.header Помощник для инвалидов] #[br] #[span.text На 1 этаже вас встретит специалист  и проводит до номера.]
+
+			//Удобства=========================================
+			div.convenience 
+				h3.convenience__header Удобства номера
+				input(type="button" value="2 спальни, 2кровати").convenience__value
+
+			//Дополнительные удобства==========================
+			div.addons 
+				input(type="addons" value="дополнительные удобства").addons__value
