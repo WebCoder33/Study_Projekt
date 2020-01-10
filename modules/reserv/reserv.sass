@@ -4,7 +4,7 @@
 
 .reserv
 	width: 380px
-	height: 511px
+	height: 530px
 	background: #FFFFFF
 	border: 1px solid rgba(0, 0, 0, 0.12)
 	box-sizing: border-box
@@ -183,12 +183,13 @@ div.reserve-header span.header__numroom_class
 
 div.price-table__cell //Костыль для переноса слова на вторую строку
 	width: 200px
-	height: 40px
+	height: 60px//40px
 	display: flex
 	flex-flow: row wrap
-	line-height: 20px
+	span
+		line-height: 20px
 
-span.price-table__attention
+div.price-table__attention
 	position: absolute
 	right: 23%
 	width: 23px
@@ -197,8 +198,9 @@ span.price-table__attention
 	color: rgba(31, 32, 65, 0.25)
 	padding-bottom: 2px
 	border: 1px solid rgba(31, 32, 65, 0.25)
-	border-radius: 100%
+	border-radius: 50%
 	margin-left: 5px
+	margin-top: 7px
 
 //----------------------------------------------------
 

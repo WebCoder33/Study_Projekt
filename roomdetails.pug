@@ -11,28 +11,36 @@ html(lang="en")
 	body
 
 		header
+			//Шапка сайта==================================
 			include modules/header/header
 
+		//Блок с картинками номера=========================
 		dev.roomdet_images
 			img(src="/img/roomdetails1.png", alt="")
 			div.roomdet_images-column
 				img(src="/img/roomdetails2.png", alt="")
 				img(src="img/roomdetails3.png", alt="")
 
-		div.wrap2 
+		//Основной контент=================================
+		div.roominf_content 
 
+			//Диаграмма, Впечатления, отзывы, правила======
 			div.content 
 
-				div.wrap1
+				div.imprassions__content
 					include modules/roominf/roominf
 					include modules/imprassion/impr
 				
 				include modules/reviews/reviews
 				include modules/rules/rules
-			div.wrap3
+
+			//Форма поиска номеров=========================
+			div.reserv__form
 				include modules/reserv/reserv
 
+		//Эбаут============================================
 		include modules/about/about
 
+		//Футер============================================
 		footer
 			include modules/footer/footer

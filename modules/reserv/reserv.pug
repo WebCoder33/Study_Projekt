@@ -14,7 +14,7 @@ form(action="").reserv
 			p.header__numroom №&nbsp
 				span.header__numroom_number #{room_number}&nbsp
 				span.header__numroom_class #{room_class}
-			p.header__numroom_second #{room_price} #[span#reserve-header__rubsimv &#8399]&nbsp
+			p.header__numroom_second #{room_price} #[span#reserve-header__rubsimv &#8381]&nbsp
 				span.reserve-header__numroom_price в сутки
 
 
@@ -38,27 +38,27 @@ form(action="").reserv
 		div.reserve-price
 
 			div.price-table__row 
-				span.price-table__cell #{room_price} #[span#reserve-header__rubsimv &#8399] x #{col_days}
-				span.price-table__cell #{price} #[span#reserve-header__rubsimv &#8399]
+				span.price-table__cell #{room_price} #[span#reserve-header__rubsimv &#8381] x #{col_days}
+				span.price-table__cell #{price} #[span#reserve-header__rubsimv &#8381]
 
 			div.price-table__row
-				span.price-table__cell Сбор за услуги: скидка #{discount} #[span#reserve-header__rubsimv &#8399] 
-				span.price-table__attention i						
-				span.price-table__cell #{service_price} #[span#reserve-header__rubsimv &#8399]
+				span.price-table__cell Сбор за услуги: скидка #{discount} #[span#reserve-header__rubsimv &#8381] 
+				div.price-table__attention i						
+				span.price-table__cell #{service_price} #[span#reserve-header__rubsimv &#8381]
 
 			div.price-table__row
 				//костыль для переноса строки
 				div.price-table__cell 
 					span Сбор за дополнительные услуги 
-				span.price-table__attention i						
-				span.price-table__cell #{price_dop} #[span#reserve-header__rubsimv &#8399]
+				div.price-table__attention i						
+				span.price-table__cell #{price_dop} #[span#reserve-header__rubsimv &#8381]
 				
 		//Total Price------------------------------------------------------------------------------
 		div.reserve-total_price
 			span.total_price__text Итого 
 			span.total_price__border
 			span.total_price__value #{total_price} 
-			span#reserve-header__rubsimv &#8399
+			span#reserve-header__rubsimv &#8381
 
 
 		//Бронирование----------------------------------------------------------------
